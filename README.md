@@ -117,6 +117,21 @@ gain as much as the subject's tracking, so read it with the tracking rate next t
 
 ---
 
+## Web version (v2)
+
+The browser version of SightPath lives in `web/` — the same measurement app,
+running in the browser.
+
+```bash
+cd web && npm install && npm run dev
+```
+
+Deploy it to Vercel by pointing the project at the `web` directory. It measures
+the same way as the desktop app; see [`docs/v2-web.md`](./docs/v2-web.md) for its
+scope and the parity contract.
+
+---
+
 ## Architecture
 
 ```
