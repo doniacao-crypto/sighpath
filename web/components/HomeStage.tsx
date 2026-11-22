@@ -14,6 +14,8 @@ export interface HomeStageProps {
   onDeviceChange(deviceId: string): void;
   onStartCalibration(): void;
   onStartTest(): void;
+  /** The operator wants to run one of the other protocols. */
+  onStartProtocol(protocol: "saccade" | "fixation" | "validation"): void;
   onShowHistory(): void;
 }
 
@@ -24,6 +26,7 @@ export function HomeStage({
   onDeviceChange,
   onStartCalibration,
   onStartTest,
+  onStartProtocol,
   onShowHistory,
 }: HomeStageProps) {
   return (
@@ -95,10 +98,46 @@ export function HomeStage({
           disabled={!hasModel}
           title={hasModel ? undefined : "Calibrate before running a test"}
         >
-          Run a test
+          Run a pursuit test
         </button>
         <button type="button" className="sp-button" onClick={onShowHistory}>
           View history
+        </button>
+      </div>
+
+      <h3 className="sp-subtitle" style={{ marginTop: "1.5rem" }}>
+        Other measurements
+      </h3>
+      <p className="sp-small sp-text-dim">
+        The same protocols the desktop app runs, in the browser.
+      </p>
+      <div className="sp-actions">
+        <button
+          type="button"
+          className="sp-button"
+          onClick={() => onStartProtocol("saccade")}
+          disabled={!hasModel}
+          title={hasModel ? undefined : "Calibrate before running a test"}
+        >
+          Saccade test
+        </button>
+        <button
+          type="button"
+          className="sp-button"
+          onClick={() => onStartProtocol("fixation")}
+          disabled={!hasModel}
+          title={hasModel ? undefined : "Calibrate before running a test"}
+        >
+          Fixation stability
+        </button>
+        <button
+          type="button"
+          className="sp-button"
+          onClick={() => onStartProtocol("validation")}
+          disabled={!hasModel}
+          title={hasModel ? undefined : "Calibrate before running a test"}
+        >
+          Gaze accuracy validation
         </button>
       </div>
 

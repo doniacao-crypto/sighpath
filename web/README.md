@@ -30,6 +30,10 @@ web/
 │   ├── calibration.ts # Calibration flow and model fitting
 │   ├── features.ts    # Polynomial features for the gaze model
 │   ├── metrics.ts     # Pursuit metrics (parity with src/metrics.py)
+│   ├── saccade.ts     # Saccade protocol (parity with src/saccade_test.py)
+│   ├── fixation.ts    # Fixation stability, BCEA, microsaccades
+│   ├── validation.ts  # Grid validation (parity with src/validation.py)
+│   ├── trajectory.ts  # Trajectory, position over time, heatmap
 │   ├── patterns.ts    # Target geometry and the calibration grid
 │   ├── ridge.ts       # Ridge regression (parity with src/gaze_estimator.py)
 │   └── types.ts       # Shared types
@@ -56,6 +60,10 @@ Regenerate them with the generator script, which lives at the repository root
 
 ```bash
 python tools/generate_parity_fixtures.py
+python tools/generate_parity_saccade.py
+python tools/generate_parity_fixation.py
+python tools/generate_parity_validation.py
+python tools/generate_parity_trajectory.py
 ```
 
 It writes `web/tests/fixtures/*.json`. Run it whenever the Python metric

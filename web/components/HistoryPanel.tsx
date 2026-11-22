@@ -1,9 +1,11 @@
 "use client";
 
-import type { TestSession } from "../lib/types";
+import { sessionSummary } from "../lib/sessions";
+import { SessionComparison } from "./SessionComparison";
+import type { ProtocolSession } from "../lib/types";
 
 export interface HistoryPanelProps {
-  sessions: TestSession[];
+  sessions: ProtocolSession[];
   onDelete(id: string): void;
   onClose(): void;
 }
@@ -13,6 +15,15 @@ export function HistoryPanel({
   onDelete,
   onClose,
 }: HistoryPanelProps) {
+  // The two newest runs of the same protocol can be compared, the way the desktop app
+  // compares two sessions.
+  const comparable = (() => {
+    if (sessions.length < 2) return null;
+    const [current, baseline] = sessions;
+    if (current.protocol !== baseline.protocol) return null;
+    return { baseline, current };
+  })();
+
   return (
     <section className="sp-card">
       <div className="sp-status">
@@ -35,31 +46,41 @@ export function HistoryPanel({
         </p>
       ) : (
         <ul>
-          {sessions.map((session) => (
-            <li className="sp-history-item" key={session.id}>
-              <div>
-                <div className="sp-history-pattern">
-                  {session.pattern.replace("_", " ")}
+          {sessions.map((session) => {
+            const summary = sessionSummary(session);
+            return (
+              <li className="sp-history-item" key={session.id}>
+                <div>
+                  <div className="sp-history-pattern">{summary.title}</div>
+                  <div className="sp-history-meta">
+                    {new Date(summary.startedAt).toLocaleString()} ·{" "}
+                    {session.durationSeconds} s
+                  </div>
                 </div>
-                <div className="sp-history-meta">
-                  {new Date(session.startedAt).toLocaleString()} ·{" "}
-                  {session.durationSeconds} s
-                </div>
-              </div>
-              <div className="sp-history-metrics">
-                Gain {session.metrics.pursuitGain.toFixed(2)}× · RMS{" "}
-                {session.metrics.accuracyDegrees.toFixed(2)}°
-              </div>
-              <button
-                type="button"
-                className="sp-button sp-button--danger"
-                onClick={() => onDelete(session.id)}
-              >
-                Delete
-              </button>
-            </li>
-          ))}
+                <div className="sp-history-metrics">{summary.headline}</div>
+                <button
+                  type="button"
+                  className="sp-button sp-button--danger"
+                  onClick={() => onDelete(session.id)}
+                >
+                  Delete
+                </button>
+              </li>
+            );
+          })}
         </ul>
+      )}
+
+      {comparable && (
+        <>
+          <h3 className="sp-subtitle" style={{ marginTop: "1.5rem" }}>
+            Compared with the previous run
+          </h3>
+          <SessionComparison
+            baseline={comparable.baseline}
+            current={comparable.current}
+          />
+        </>
       )}
     </section>
   );

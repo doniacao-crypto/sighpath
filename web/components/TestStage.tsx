@@ -132,6 +132,7 @@ export function TestStage({
             ? crypto.randomUUID()
             : `session-${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
         const session: TestSession = {
+          protocol: "pursuit",
           id,
           startedAt: new Date(startWallClockRef.current).toISOString(),
           pattern: current.pattern,

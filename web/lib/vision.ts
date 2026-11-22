@@ -57,7 +57,7 @@ export interface VisionOptions {
 /** One measured frame: the sample the calibration model is fitted on, plus the raw mesh. */
 export interface VisionFrame {
   sample: EyeSample;
-  landmarks: unknown[];
+  landmarks: readonly NormalizedLandmark[];
 }
 
 /**
