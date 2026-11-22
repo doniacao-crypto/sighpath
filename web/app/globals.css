@@ -1,0 +1,429 @@
+/*
+ * SightPath — dark clinical styling.
+ *
+ * The app runs on a laptop in a clinic, often in a dim room, so the palette is
+ * near-black with high-contrast text and large touch targets. System fonts only:
+ * no external font request, so the app also works on a machine without internet.
+ */
+
+:root {
+  --sp-bg: #08090b;
+  --sp-surface: #14181d;
+  --sp-surface-2: #1d232b;
+  --sp-border: #2b333d;
+  --sp-text: #f2f6fa;
+  --sp-text-dim: #a4b2c3;
+  --sp-accent: #58a6ff;
+  --sp-accent-strong: #1f6feb;
+  --sp-warn: #ffcc66;
+  --sp-danger: #ff7b72;
+  --sp-ok: #56d364;
+  --sp-target: #ffd250;
+  --sp-radius: 12px;
+  --sp-font:
+    system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--sp-bg);
+  color: var(--sp-text);
+  font-family: var(--sp-font);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sp-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 1.25rem 2rem;
+}
+
+/* Header ------------------------------------------------------------------ */
+
+.sp-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.25rem 0 1rem;
+  border-bottom: 1px solid var(--sp-border);
+  margin-bottom: 1.5rem;
+}
+
+.sp-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sp-brand-mark {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.sp-brand-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sp-warn);
+  border: 1px solid rgba(255, 204, 102, 0.4);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+}
+
+.sp-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Cards and text ---------------------------------------------------------- */
+
+.sp-card {
+  background: var(--sp-surface);
+  border: 1px solid var(--sp-border);
+  border-radius: var(--sp-radius);
+  padding: 1.5rem;
+}
+
+.sp-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.sp-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sp-lead {
+  font-size: 1.05rem;
+  color: var(--sp-text-dim);
+  max-width: 62ch;
+}
+
+.sp-text-dim {
+  color: var(--sp-text-dim);
+}
+
+.sp-small {
+  font-size: 0.9rem;
+}
+
+/* Notices ----------------------------------------------------------------- */
+
+.sp-notice {
+  border-radius: var(--sp-radius);
+  border: 1px solid var(--sp-border);
+  border-left-width: 4px;
+  padding: 0.9rem 1.1rem;
+  background: var(--sp-surface-2);
+}
+
+.sp-notice--warn {
+  border-left-color: var(--sp-warn);
+}
+
+.sp-notice--error {
+  border-left-color: var(--sp-danger);
+}
+
+.sp-notice--info {
+  border-left-color: var(--sp-accent);
+}
+
+.sp-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.sp-notice-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Buttons ----------------------------------------------------------------- */
+
+.sp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.sp-button {
+  min-height: 52px;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  border: 1px solid var(--sp-border);
+  background: var(--sp-surface-2);
+  color: var(--sp-text);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 120ms ease,
+    border-color 120ms ease;
+}
+
+.sp-button:hover:not(:disabled) {
+  background: #262f3a;
+}
+
+.sp-button:focus-visible {
+  outline: 3px solid var(--sp-accent);
+  outline-offset: 2px;
+}
+
+.sp-button--primary {
+  background: var(--sp-accent-strong);
+  border-color: var(--sp-accent-strong);
+  color: #ffffff;
+}
+
+.sp-button--primary:hover:not(:disabled) {
+  background: #2a7ff0;
+}
+
+.sp-button--danger {
+  color: var(--sp-danger);
+  border-color: rgba(255, 123, 114, 0.5);
+}
+
+.sp-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Fields ------------------------------------------------------------------ */
+
+.sp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 12rem;
+}
+
+.sp-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sp-text-dim);
+}
+
+.sp-select {
+  min-height: 48px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--sp-border);
+  background: var(--sp-surface-2);
+  color: var(--sp-text);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.sp-select:focus-visible {
+  outline: 3px solid var(--sp-accent);
+  outline-offset: 2px;
+}
+
+.sp-select:disabled {
+  opacity: 0.5;
+}
+
+.sp-field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Camera ------------------------------------------------------------------ */
+
+.sp-camera-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sp-camera {
+  position: relative;
+  width: 100%;
+  background: #000000;
+  border: 1px solid var(--sp-border);
+  border-radius: var(--sp-radius);
+  overflow: hidden;
+}
+
+.sp-camera-note {
+  font-size: 0.9rem;
+  color: var(--sp-text-dim);
+  margin: 0;
+}
+
+.sp-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1.05rem;
+}
+
+.sp-status-strong {
+  font-weight: 600;
+}
+
+.sp-progress {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--sp-surface-2);
+  overflow: hidden;
+}
+
+.sp-progress-bar {
+  height: 100%;
+  background: var(--sp-accent);
+}
+
+/* Measurements ------------------------------------------------------------ */
+
+.sp-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+}
+
+.sp-stat {
+  background: var(--sp-surface-2);
+  border: 1px solid var(--sp-border);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.sp-stat-label {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sp-text-dim);
+}
+
+.sp-stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.sp-stat-unit {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--sp-text-dim);
+  margin-left: 0.25rem;
+}
+
+.sp-stat-note {
+  font-size: 0.82rem;
+  color: var(--sp-text-dim);
+}
+
+/* History ----------------------------------------------------------------- */
+
+.sp-history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--sp-border);
+}
+
+.sp-history-item:last-child {
+  border-bottom: none;
+}
+
+.sp-history-pattern {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.sp-history-meta {
+  font-size: 0.9rem;
+  color: var(--sp-text-dim);
+}
+
+.sp-history-metrics {
+  font-variant-numeric: tabular-nums;
+}
+
+.sp-empty {
+  color: var(--sp-text-dim);
+  padding: 0.75rem 0;
+}
+
+/* Footer ------------------------------------------------------------------ */
+
+.sp-footer {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sp-border);
+  font-size: 0.85rem;
+  color: var(--sp-text-dim);
+}
+
+.sp-footer p {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 720px) {
+  .sp-card {
+    padding: 1.1rem;
+  }
+
+  .sp-title {
+    font-size: 1.4rem;
+  }
+
+  .sp-actions .sp-button {
+    flex: 1 1 100%;
+  }
+}

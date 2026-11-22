@@ -29,6 +29,11 @@ build/
 out/
 .next/
 
+# Next.js (web app)
+web/.next/
+web/out/
+web/next-env.d.ts
+
 # Testing
 coverage/
 playwright-report/

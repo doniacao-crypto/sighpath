@@ -1,0 +1,3024 @@
+{
+ "description": "parity-head-drift",
+ "screen": {
+  "widthPx": 1920,
+  "heightPx": 1080,
+  "widthCm": 53.1,
+  "heightCm": 29.9,
+  "viewingDistanceCm": 60.0
+ },
+ "frames": [
+  {
+   "timestamp": 0.0,
+   "targetX": 960,
+   "targetY": 540,
+   "gazeX": 968,
+   "gazeY": 529,
+   "headPitch": 0.0,
+   "headYaw": 6.0,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.033333,
+   "targetX": 990,
+   "targetY": 540,
+   "gazeX": 986,
+   "gazeY": 537,
+   "headPitch": 0.114233,
+   "headYaw": 5.999221,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.066667,
+   "targetX": 1021,
+   "targetY": 540,
+   "gazeX": 1007,
+   "gazeY": 539,
+   "headPitch": 0.228424,
+   "headYaw": 5.996886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.1,
+   "targetX": 1051,
+   "targetY": 540,
+   "gazeX": 1025,
+   "gazeY": 539,
+   "headPitch": 0.342533,
+   "headYaw": 5.992993,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.133333,
+   "targetX": 1082,
+   "targetY": 540,
+   "gazeX": 1054,
+   "gazeY": 553,
+   "headPitch": 0.456517,
+   "headYaw": 5.987546,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.166667,
+   "targetX": 1112,
+   "targetY": 540,
+   "gazeX": 1083,
+   "gazeY": 538,
+   "headPitch": 0.570336,
+   "headYaw": 5.980544,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.2,
+   "targetX": 1142,
+   "targetY": 540,
+   "gazeX": 1105,
+   "gazeY": 537,
+   "headPitch": 0.683948,
+   "headYaw": 5.97199,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.233333,
+   "targetX": 1172,
+   "targetY": 540,
+   "gazeX": 1126,
+   "gazeY": 538,
+   "headPitch": 0.797313,
+   "headYaw": 5.961886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.266667,
+   "targetX": 1202,
+   "targetY": 540,
+   "gazeX": 1155,
+   "gazeY": 539,
+   "headPitch": 0.910388,
+   "headYaw": 5.950234,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.3,
+   "targetX": 1231,
+   "targetY": 540,
+   "gazeX": 1181,
+   "gazeY": 539,
+   "headPitch": 1.023133,
+   "headYaw": 5.937038,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.333333,
+   "targetX": 1260,
+   "targetY": 540,
+   "gazeX": 1200,
+   "gazeY": 546,
+   "headPitch": 1.135507,
+   "headYaw": 5.922302,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.366667,
+   "targetX": 1289,
+   "targetY": 540,
+   "gazeX": 1225,
+   "gazeY": 537,
+   "headPitch": 1.24747,
+   "headYaw": 5.906028,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.4,
+   "targetX": 1317,
+   "targetY": 540,
+   "gazeX": 1245,
+   "gazeY": 542,
+   "headPitch": 1.358981,
+   "headYaw": 5.888221,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.433333,
+   "targetX": 1345,
+   "targetY": 540,
+   "gazeX": 1276,
+   "gazeY": 538,
+   "headPitch": 1.469998,
+   "headYaw": 5.868886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.466667,
+   "targetX": 1373,
+   "targetY": 540,
+   "gazeX": 1289,
+   "gazeY": 544,
+   "headPitch": 1.580483,
+   "headYaw": 5.848027,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.5,
+   "targetX": 1400,
+   "targetY": 540,
+   "gazeX": 1308,
+   "gazeY": 538,
+   "headPitch": 1.690395,
+   "headYaw": 5.825651,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.533333,
+   "targetX": 1426,
+   "targetY": 540,
+   "gazeX": 1336,
+   "gazeY": 542,
+   "headPitch": 1.799695,
+   "headYaw": 5.801763,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.566667,
+   "targetX": 1452,
+   "targetY": 540,
+   "gazeX": 1354,
+   "gazeY": 542,
+   "headPitch": 1.908341,
+   "headYaw": 5.776368,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.6,
+   "targetX": 1477,
+   "targetY": 540,
+   "gazeX": 1362,
+   "gazeY": 544,
+   "headPitch": 2.016296,
+   "headYaw": 5.749475,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.633333,
+   "targetX": 1501,
+   "targetY": 540,
+   "gazeX": 1389,
+   "gazeY": 533,
+   "headPitch": 2.12352,
+   "headYaw": 5.721089,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.666667,
+   "targetX": 1525,
+   "targetY": 540,
+   "gazeX": 1413,
+   "gazeY": 542,
+   "headPitch": 2.229975,
+   "headYaw": 5.691219,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.7,
+   "targetX": 1548,
+   "targetY": 540,
+   "gazeX": 1429,
+   "gazeY": 535,
+   "headPitch": 2.335621,
+   "headYaw": 5.659871,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.733333,
+   "targetX": 1571,
+   "targetY": 540,
+   "gazeX": 1449,
+   "gazeY": 539,
+   "headPitch": 2.44042,
+   "headYaw": 5.627054,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.766667,
+   "targetX": 1593,
+   "targetY": 540,
+   "gazeX": 1472,
+   "gazeY": 542,
+   "headPitch": 2.544334,
+   "headYaw": 5.592777,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.8,
+   "targetX": 1613,
+   "targetY": 540,
+   "gazeX": 1483,
+   "gazeY": 544,
+   "headPitch": 2.647327,
+   "headYaw": 5.557048,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.833333,
+   "targetX": 1634,
+   "targetY": 540,
+   "gazeX": 1498,
+   "gazeY": 536,
+   "headPitch": 2.749359,
+   "headYaw": 5.519877,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.866667,
+   "targetX": 1653,
+   "targetY": 540,
+   "gazeX": 1517,
+   "gazeY": 542,
+   "headPitch": 2.850395,
+   "headYaw": 5.481273,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.9,
+   "targetX": 1671,
+   "targetY": 540,
+   "gazeX": 1528,
+   "gazeY": 536,
+   "headPitch": 2.950398,
+   "headYaw": 5.441246,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.933333,
+   "targetX": 1689,
+   "targetY": 540,
+   "gazeX": 1544,
+   "gazeY": 530,
+   "headPitch": 3.049331,
+   "headYaw": 5.399807,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 0.966667,
+   "targetX": 1706,
+   "targetY": 540,
+   "gazeX": 1559,
+   "gazeY": 541,
+   "headPitch": 3.147158,
+   "headYaw": 5.356967,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.0,
+   "targetX": 1722,
+   "targetY": 540,
+   "gazeX": 1563,
+   "gazeY": 540,
+   "headPitch": 3.243845,
+   "headYaw": 5.312736,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.033333,
+   "targetX": 1736,
+   "targetY": 540,
+   "gazeX": 1577,
+   "gazeY": 543,
+   "headPitch": 3.339356,
+   "headYaw": 5.267126,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.066667,
+   "targetX": 1750,
+   "targetY": 540,
+   "gazeX": 1584,
+   "gazeY": 536,
+   "headPitch": 3.433656,
+   "headYaw": 5.22015,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.1,
+   "targetX": 1763,
+   "targetY": 540,
+   "gazeX": 1605,
+   "gazeY": 544,
+   "headPitch": 3.526712,
+   "headYaw": 5.171818,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.133333,
+   "targetX": 1775,
+   "targetY": 540,
+   "gazeX": 1604,
+   "gazeY": 538,
+   "headPitch": 3.618489,
+   "headYaw": 5.122144,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.166667,
+   "targetX": 1786,
+   "targetY": 540,
+   "gazeX": 1622,
+   "gazeY": 537,
+   "headPitch": 3.708954,
+   "headYaw": 5.071141,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.2,
+   "targetX": 1796,
+   "targetY": 540,
+   "gazeX": 1635,
+   "gazeY": 535,
+   "headPitch": 3.798075,
+   "headYaw": 5.018821,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.233333,
+   "targetX": 1805,
+   "targetY": 540,
+   "gazeX": 1638,
+   "gazeY": 535,
+   "headPitch": 3.885819,
+   "headYaw": 4.965199,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.266667,
+   "targetX": 1813,
+   "targetY": 540,
+   "gazeX": 1648,
+   "gazeY": 539,
+   "headPitch": 3.972154,
+   "headYaw": 4.910287,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.3,
+   "targetX": 1820,
+   "targetY": 540,
+   "gazeX": 1647,
+   "gazeY": 533,
+   "headPitch": 4.057049,
+   "headYaw": 4.854102,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.333333,
+   "targetX": 1826,
+   "targetY": 540,
+   "gazeX": 1660,
+   "gazeY": 543,
+   "headPitch": 4.140474,
+   "headYaw": 4.796657,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.366667,
+   "targetX": 1831,
+   "targetY": 540,
+   "gazeX": 1660,
+   "gazeY": 544,
+   "headPitch": 4.222398,
+   "headYaw": 4.737966,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.4,
+   "targetX": 1835,
+   "targetY": 540,
+   "gazeX": 1661,
+   "gazeY": 537,
+   "headPitch": 4.302791,
+   "headYaw": 4.678046,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.433333,
+   "targetX": 1837,
+   "targetY": 540,
+   "gazeX": 1659,
+   "gazeY": 536,
+   "headPitch": 4.381624,
+   "headYaw": 4.616912,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.466667,
+   "targetX": 1839,
+   "targetY": 540,
+   "gazeX": 1669,
+   "gazeY": 534,
+   "headPitch": 4.458869,
+   "headYaw": 4.554579,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.5,
+   "targetX": 1840,
+   "targetY": 540,
+   "gazeX": 1661,
+   "gazeY": 538,
+   "headPitch": 4.534497,
+   "headYaw": 4.491064,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.533333,
+   "targetX": 1839,
+   "targetY": 540,
+   "gazeX": 1664,
+   "gazeY": 542,
+   "headPitch": 4.608482,
+   "headYaw": 4.426384,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.566667,
+   "targetX": 1837,
+   "targetY": 540,
+   "gazeX": 1657,
+   "gazeY": 533,
+   "headPitch": 4.680796,
+   "headYaw": 4.360555,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.6,
+   "targetX": 1835,
+   "targetY": 540,
+   "gazeX": 1660,
+   "gazeY": 544,
+   "headPitch": 4.751413,
+   "headYaw": 4.293594,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.633333,
+   "targetX": 1831,
+   "targetY": 540,
+   "gazeX": 1660,
+   "gazeY": 540,
+   "headPitch": 4.820308,
+   "headYaw": 4.225518,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.666667,
+   "targetX": 1826,
+   "targetY": 540,
+   "gazeX": 1652,
+   "gazeY": 541,
+   "headPitch": 4.887456,
+   "headYaw": 4.156346,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.7,
+   "targetX": 1820,
+   "targetY": 540,
+   "gazeX": 1647,
+   "gazeY": 543,
+   "headPitch": 4.952831,
+   "headYaw": 4.086095,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.733333,
+   "targetX": 1813,
+   "targetY": 540,
+   "gazeX": 1639,
+   "gazeY": 540,
+   "headPitch": 5.016412,
+   "headYaw": 4.014784,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.766667,
+   "targetX": 1805,
+   "targetY": 540,
+   "gazeX": 1636,
+   "gazeY": 542,
+   "headPitch": 5.078173,
+   "headYaw": 3.94243,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.8,
+   "targetX": 1796,
+   "targetY": 540,
+   "gazeX": 1630,
+   "gazeY": 550,
+   "headPitch": 5.138094,
+   "headYaw": 3.869053,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.833333,
+   "targetX": 1786,
+   "targetY": 540,
+   "gazeX": 1627,
+   "gazeY": 545,
+   "headPitch": 5.196152,
+   "headYaw": 3.794672,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.866667,
+   "targetX": 1775,
+   "targetY": 540,
+   "gazeX": 1604,
+   "gazeY": 538,
+   "headPitch": 5.252327,
+   "headYaw": 3.719306,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.9,
+   "targetX": 1763,
+   "targetY": 540,
+   "gazeX": 1600,
+   "gazeY": 542,
+   "headPitch": 5.306598,
+   "headYaw": 3.642975,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.933333,
+   "targetX": 1750,
+   "targetY": 540,
+   "gazeX": 1583,
+   "gazeY": 544,
+   "headPitch": 5.358944,
+   "headYaw": 3.565698,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 1.966667,
+   "targetX": 1736,
+   "targetY": 540,
+   "gazeX": 1585,
+   "gazeY": 534,
+   "headPitch": 5.409349,
+   "headYaw": 3.487496,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.0,
+   "targetX": 1722,
+   "targetY": 540,
+   "gazeX": 1565,
+   "gazeY": 536,
+   "headPitch": 5.457792,
+   "headYaw": 3.408388,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.033333,
+   "targetX": 1706,
+   "targetY": 540,
+   "gazeX": 1557,
+   "gazeY": 542,
+   "headPitch": 5.504257,
+   "headYaw": 3.328396,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.066667,
+   "targetX": 1689,
+   "targetY": 540,
+   "gazeX": 1551,
+   "gazeY": 539,
+   "headPitch": 5.548726,
+   "headYaw": 3.24754,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.1,
+   "targetX": 1671,
+   "targetY": 540,
+   "gazeX": 1532,
+   "gazeY": 540,
+   "headPitch": 5.591184,
+   "headYaw": 3.165841,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.133333,
+   "targetX": 1653,
+   "targetY": 540,
+   "gazeX": 1521,
+   "gazeY": 542,
+   "headPitch": 5.631615,
+   "headYaw": 3.083321,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.166667,
+   "targetX": 1634,
+   "targetY": 540,
+   "gazeX": 1504,
+   "gazeY": 535,
+   "headPitch": 5.670005,
+   "headYaw": 3.0,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.2,
+   "targetX": 1613,
+   "targetY": 540,
+   "gazeX": 1482,
+   "gazeY": 536,
+   "headPitch": 5.706339,
+   "headYaw": 2.9159,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.233333,
+   "targetX": 1593,
+   "targetY": 540,
+   "gazeX": 1472,
+   "gazeY": 542,
+   "headPitch": 5.740605,
+   "headYaw": 2.831044,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.266667,
+   "targetX": 1571,
+   "targetY": 540,
+   "gazeX": 1447,
+   "gazeY": 538,
+   "headPitch": 5.772789,
+   "headYaw": 2.745453,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.3,
+   "targetX": 1548,
+   "targetY": 540,
+   "gazeX": 1433,
+   "gazeY": 537,
+   "headPitch": 5.802881,
+   "headYaw": 2.659149,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.333333,
+   "targetX": 1525,
+   "targetY": 540,
+   "gazeX": 1408,
+   "gazeY": 541,
+   "headPitch": 5.830869,
+   "headYaw": 2.572155,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.366667,
+   "targetX": 1501,
+   "targetY": 540,
+   "gazeX": 1403,
+   "gazeY": 539,
+   "headPitch": 5.856744,
+   "headYaw": 2.484494,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.4,
+   "targetX": 1477,
+   "targetY": 540,
+   "gazeX": 1371,
+   "gazeY": 535,
+   "headPitch": 5.880495,
+   "headYaw": 2.396188,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.433333,
+   "targetX": 1452,
+   "targetY": 540,
+   "gazeX": 1348,
+   "gazeY": 542,
+   "headPitch": 5.902115,
+   "headYaw": 2.307259,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.466667,
+   "targetX": 1426,
+   "targetY": 540,
+   "gazeX": 1336,
+   "gazeY": 540,
+   "headPitch": 5.921595,
+   "headYaw": 2.217732,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.5,
+   "targetX": 1400,
+   "targetY": 540,
+   "gazeX": 1313,
+   "gazeY": 540,
+   "headPitch": 5.938929,
+   "headYaw": 2.127629,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.533333,
+   "targetX": 1373,
+   "targetY": 540,
+   "gazeX": 1291,
+   "gazeY": 533,
+   "headPitch": 5.954109,
+   "headYaw": 2.036974,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.566667,
+   "targetX": 1345,
+   "targetY": 540,
+   "gazeX": 1266,
+   "gazeY": 540,
+   "headPitch": 5.967131,
+   "headYaw": 1.945791,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.6,
+   "targetX": 1317,
+   "targetY": 540,
+   "gazeX": 1243,
+   "gazeY": 538,
+   "headPitch": 5.97799,
+   "headYaw": 1.854102,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.633333,
+   "targetX": 1289,
+   "targetY": 540,
+   "gazeX": 1220,
+   "gazeY": 538,
+   "headPitch": 5.986682,
+   "headYaw": 1.761932,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.666667,
+   "targetX": 1260,
+   "targetY": 540,
+   "gazeX": 1204,
+   "gazeY": 538,
+   "headPitch": 5.993204,
+   "headYaw": 1.669305,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.7,
+   "targetX": 1231,
+   "targetY": 540,
+   "gazeX": 1176,
+   "gazeY": 543,
+   "headPitch": 5.997553,
+   "headYaw": 1.576244,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.733333,
+   "targetX": 1202,
+   "targetY": 540,
+   "gazeX": 1156,
+   "gazeY": 546,
+   "headPitch": 5.999728,
+   "headYaw": 1.482775,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.766667,
+   "targetX": 1172,
+   "targetY": 540,
+   "gazeX": 1121,
+   "gazeY": 543,
+   "headPitch": 5.999728,
+   "headYaw": 1.38892,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.8,
+   "targetX": 1142,
+   "targetY": 540,
+   "gazeX": 1104,
+   "gazeY": 540,
+   "headPitch": 5.997553,
+   "headYaw": 1.294705,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.833333,
+   "targetX": 1112,
+   "targetY": 540,
+   "gazeX": 1085,
+   "gazeY": 544,
+   "headPitch": 5.993204,
+   "headYaw": 1.200154,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.866667,
+   "targetX": 1082,
+   "targetY": 540,
+   "gazeX": 1062,
+   "gazeY": 540,
+   "headPitch": 5.986682,
+   "headYaw": 1.105292,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.9,
+   "targetX": 1051,
+   "targetY": 540,
+   "gazeX": 1040,
+   "gazeY": 538,
+   "headPitch": 5.97799,
+   "headYaw": 1.010142,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.933333,
+   "targetX": 1021,
+   "targetY": 540,
+   "gazeX": 1008,
+   "gazeY": 543,
+   "headPitch": 5.967131,
+   "headYaw": 0.914731,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 2.966667,
+   "targetX": 990,
+   "targetY": 540,
+   "gazeX": 982,
+   "gazeY": 548,
+   "headPitch": 5.954109,
+   "headYaw": 0.819082,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.0,
+   "targetX": 960,
+   "targetY": 540,
+   "gazeX": 964,
+   "gazeY": 548,
+   "headPitch": 5.938929,
+   "headYaw": 0.72322,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.033333,
+   "targetX": 929,
+   "targetY": 540,
+   "gazeX": 935,
+   "gazeY": 538,
+   "headPitch": 5.921595,
+   "headYaw": 0.627171,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.066667,
+   "targetX": 898,
+   "targetY": 540,
+   "gazeX": 911,
+   "gazeY": 542,
+   "headPitch": 5.902115,
+   "headYaw": 0.530959,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.1,
+   "targetX": 868,
+   "targetY": 540,
+   "gazeX": 884,
+   "gazeY": 541,
+   "headPitch": 5.880495,
+   "headYaw": 0.434609,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.133333,
+   "targetX": 837,
+   "targetY": 540,
+   "gazeX": 861,
+   "gazeY": 546,
+   "headPitch": 5.856744,
+   "headYaw": 0.338146,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.166667,
+   "targetX": 807,
+   "targetY": 540,
+   "gazeX": 835,
+   "gazeY": 544,
+   "headPitch": 5.830869,
+   "headYaw": 0.241596,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.2,
+   "targetX": 777,
+   "targetY": 540,
+   "gazeX": 811,
+   "gazeY": 536,
+   "headPitch": 5.802881,
+   "headYaw": 0.144982,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.233333,
+   "targetX": 747,
+   "targetY": 540,
+   "gazeX": 786,
+   "gazeY": 535,
+   "headPitch": 5.772789,
+   "headYaw": 0.048332,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.266667,
+   "targetX": 717,
+   "targetY": 540,
+   "gazeX": 766,
+   "gazeY": 544,
+   "headPitch": 5.740605,
+   "headYaw": -0.048332,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.3,
+   "targetX": 688,
+   "targetY": 540,
+   "gazeX": 743,
+   "gazeY": 542,
+   "headPitch": 5.706339,
+   "headYaw": -0.144982,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.333333,
+   "targetX": 659,
+   "targetY": 540,
+   "gazeX": 725,
+   "gazeY": 541,
+   "headPitch": 5.670005,
+   "headYaw": -0.241596,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.366667,
+   "targetX": 630,
+   "targetY": 540,
+   "gazeX": 697,
+   "gazeY": 538,
+   "headPitch": 5.631615,
+   "headYaw": -0.338146,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.4,
+   "targetX": 602,
+   "targetY": 540,
+   "gazeX": 667,
+   "gazeY": 543,
+   "headPitch": 5.591184,
+   "headYaw": -0.434609,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.433333,
+   "targetX": 574,
+   "targetY": 540,
+   "gazeX": 644,
+   "gazeY": 542,
+   "headPitch": 5.548726,
+   "headYaw": -0.530959,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.466667,
+   "targetX": 546,
+   "targetY": 540,
+   "gazeX": 629,
+   "gazeY": 544,
+   "headPitch": 5.504257,
+   "headYaw": -0.627171,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.5,
+   "targetX": 520,
+   "targetY": 540,
+   "gazeX": 607,
+   "gazeY": 536,
+   "headPitch": 5.457792,
+   "headYaw": -0.72322,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.533333,
+   "targetX": 493,
+   "targetY": 540,
+   "gazeX": 588,
+   "gazeY": 537,
+   "headPitch": 5.409349,
+   "headYaw": -0.819082,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.566667,
+   "targetX": 467,
+   "targetY": 540,
+   "gazeX": 565,
+   "gazeY": 540,
+   "headPitch": 5.358944,
+   "headYaw": -0.914731,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.6,
+   "targetX": 442,
+   "targetY": 540,
+   "gazeX": 545,
+   "gazeY": 539,
+   "headPitch": 5.306598,
+   "headYaw": -1.010142,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.633333,
+   "targetX": 418,
+   "targetY": 540,
+   "gazeX": 523,
+   "gazeY": 539,
+   "headPitch": 5.252327,
+   "headYaw": -1.105292,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.666667,
+   "targetX": 394,
+   "targetY": 540,
+   "gazeX": 498,
+   "gazeY": 539,
+   "headPitch": 5.196152,
+   "headYaw": -1.200154,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.7,
+   "targetX": 371,
+   "targetY": 540,
+   "gazeX": 484,
+   "gazeY": 544,
+   "headPitch": 5.138094,
+   "headYaw": -1.294705,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.733333,
+   "targetX": 348,
+   "targetY": 540,
+   "gazeX": 476,
+   "gazeY": 532,
+   "headPitch": 5.078173,
+   "headYaw": -1.38892,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.766667,
+   "targetX": 326,
+   "targetY": 540,
+   "gazeX": 454,
+   "gazeY": 539,
+   "headPitch": 5.016412,
+   "headYaw": -1.482775,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.8,
+   "targetX": 306,
+   "targetY": 540,
+   "gazeX": 432,
+   "gazeY": 542,
+   "headPitch": 4.952831,
+   "headYaw": -1.576244,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.833333,
+   "targetX": 285,
+   "targetY": 540,
+   "gazeX": 418,
+   "gazeY": 532,
+   "headPitch": 4.887456,
+   "headYaw": -1.669305,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.866667,
+   "targetX": 266,
+   "targetY": 540,
+   "gazeX": 404,
+   "gazeY": 539,
+   "headPitch": 4.820308,
+   "headYaw": -1.761932,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.9,
+   "targetX": 248,
+   "targetY": 540,
+   "gazeX": 390,
+   "gazeY": 535,
+   "headPitch": 4.751413,
+   "headYaw": -1.854102,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.933333,
+   "targetX": 230,
+   "targetY": 540,
+   "gazeX": 378,
+   "gazeY": 542,
+   "headPitch": 4.680796,
+   "headYaw": -1.945791,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 3.966667,
+   "targetX": 213,
+   "targetY": 540,
+   "gazeX": 358,
+   "gazeY": 537,
+   "headPitch": 4.608482,
+   "headYaw": -2.036974,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.0,
+   "targetX": 197,
+   "targetY": 540,
+   "gazeX": 349,
+   "gazeY": 537,
+   "headPitch": 4.534497,
+   "headYaw": -2.127629,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.033333,
+   "targetX": 183,
+   "targetY": 540,
+   "gazeX": 345,
+   "gazeY": 540,
+   "headPitch": 4.458869,
+   "headYaw": -2.217732,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.066667,
+   "targetX": 169,
+   "targetY": 540,
+   "gazeX": 323,
+   "gazeY": 536,
+   "headPitch": 4.381624,
+   "headYaw": -2.307259,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.1,
+   "targetX": 156,
+   "targetY": 540,
+   "gazeX": 316,
+   "gazeY": 549,
+   "headPitch": 4.302791,
+   "headYaw": -2.396188,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.133333,
+   "targetX": 144,
+   "targetY": 540,
+   "gazeX": 306,
+   "gazeY": 540,
+   "headPitch": 4.222398,
+   "headYaw": -2.484494,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.166667,
+   "targetX": 133,
+   "targetY": 540,
+   "gazeX": 300,
+   "gazeY": 539,
+   "headPitch": 4.140474,
+   "headYaw": -2.572155,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.2,
+   "targetX": 123,
+   "targetY": 540,
+   "gazeX": 299,
+   "gazeY": 537,
+   "headPitch": 4.057049,
+   "headYaw": -2.659149,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.233333,
+   "targetX": 114,
+   "targetY": 540,
+   "gazeX": 286,
+   "gazeY": 540,
+   "headPitch": 3.972154,
+   "headYaw": -2.745453,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.266667,
+   "targetX": 106,
+   "targetY": 540,
+   "gazeX": 279,
+   "gazeY": 535,
+   "headPitch": 3.885819,
+   "headYaw": -2.831044,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.3,
+   "targetX": 99,
+   "targetY": 540,
+   "gazeX": 278,
+   "gazeY": 539,
+   "headPitch": 3.798075,
+   "headYaw": -2.9159,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.333333,
+   "targetX": 93,
+   "targetY": 540,
+   "gazeX": 266,
+   "gazeY": 536,
+   "headPitch": 3.708954,
+   "headYaw": -3.0,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.366667,
+   "targetX": 88,
+   "targetY": 540,
+   "gazeX": 259,
+   "gazeY": 542,
+   "headPitch": 3.618489,
+   "headYaw": -3.083321,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.4,
+   "targetX": 84,
+   "targetY": 540,
+   "gazeX": 263,
+   "gazeY": 543,
+   "headPitch": 3.526712,
+   "headYaw": -3.165841,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.433333,
+   "targetX": 82,
+   "targetY": 540,
+   "gazeX": 262,
+   "gazeY": 542,
+   "headPitch": 3.433656,
+   "headYaw": -3.24754,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.466667,
+   "targetX": 80,
+   "targetY": 540,
+   "gazeX": 256,
+   "gazeY": 543,
+   "headPitch": 3.339356,
+   "headYaw": -3.328396,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.5,
+   "targetX": 80,
+   "targetY": 540,
+   "gazeX": 258,
+   "gazeY": 539,
+   "headPitch": 3.243845,
+   "headYaw": -3.408388,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.533333,
+   "targetX": 80,
+   "targetY": 540,
+   "gazeX": 259,
+   "gazeY": 545,
+   "headPitch": 3.147158,
+   "headYaw": -3.487496,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.566667,
+   "targetX": 82,
+   "targetY": 540,
+   "gazeX": 258,
+   "gazeY": 538,
+   "headPitch": 3.049331,
+   "headYaw": -3.565698,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.6,
+   "targetX": 84,
+   "targetY": 540,
+   "gazeX": 262,
+   "gazeY": 547,
+   "headPitch": 2.950398,
+   "headYaw": -3.642975,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.633333,
+   "targetX": 88,
+   "targetY": 540,
+   "gazeX": 262,
+   "gazeY": 539,
+   "headPitch": 2.850395,
+   "headYaw": -3.719306,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.666667,
+   "targetX": 93,
+   "targetY": 540,
+   "gazeX": 266,
+   "gazeY": 544,
+   "headPitch": 2.749359,
+   "headYaw": -3.794672,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.7,
+   "targetX": 99,
+   "targetY": 540,
+   "gazeX": 264,
+   "gazeY": 541,
+   "headPitch": 2.647327,
+   "headYaw": -3.869053,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.733333,
+   "targetX": 106,
+   "targetY": 540,
+   "gazeX": 281,
+   "gazeY": 536,
+   "headPitch": 2.544334,
+   "headYaw": -3.94243,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.766667,
+   "targetX": 114,
+   "targetY": 540,
+   "gazeX": 289,
+   "gazeY": 542,
+   "headPitch": 2.44042,
+   "headYaw": -4.014784,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.8,
+   "targetX": 123,
+   "targetY": 540,
+   "gazeX": 288,
+   "gazeY": 540,
+   "headPitch": 2.335621,
+   "headYaw": -4.086095,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.833333,
+   "targetX": 133,
+   "targetY": 540,
+   "gazeX": 292,
+   "gazeY": 537,
+   "headPitch": 2.229975,
+   "headYaw": -4.156346,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.866667,
+   "targetX": 144,
+   "targetY": 540,
+   "gazeX": 314,
+   "gazeY": 536,
+   "headPitch": 2.12352,
+   "headYaw": -4.225518,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.9,
+   "targetX": 156,
+   "targetY": 540,
+   "gazeX": 324,
+   "gazeY": 539,
+   "headPitch": 2.016296,
+   "headYaw": -4.293594,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.933333,
+   "targetX": 169,
+   "targetY": 540,
+   "gazeX": 331,
+   "gazeY": 540,
+   "headPitch": 1.908341,
+   "headYaw": -4.360555,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 4.966667,
+   "targetX": 183,
+   "targetY": 540,
+   "gazeX": 329,
+   "gazeY": 537,
+   "headPitch": 1.799695,
+   "headYaw": -4.426384,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.0,
+   "targetX": 197,
+   "targetY": 540,
+   "gazeX": 351,
+   "gazeY": 535,
+   "headPitch": 1.690395,
+   "headYaw": -4.491064,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.033333,
+   "targetX": 213,
+   "targetY": 540,
+   "gazeX": 357,
+   "gazeY": 541,
+   "headPitch": 1.580483,
+   "headYaw": -4.554579,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.066667,
+   "targetX": 230,
+   "targetY": 540,
+   "gazeX": 373,
+   "gazeY": 533,
+   "headPitch": 1.469998,
+   "headYaw": -4.616912,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.1,
+   "targetX": 248,
+   "targetY": 540,
+   "gazeX": 387,
+   "gazeY": 543,
+   "headPitch": 1.358981,
+   "headYaw": -4.678046,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.133333,
+   "targetX": 266,
+   "targetY": 540,
+   "gazeX": 403,
+   "gazeY": 543,
+   "headPitch": 1.24747,
+   "headYaw": -4.737966,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.166667,
+   "targetX": 285,
+   "targetY": 540,
+   "gazeX": 426,
+   "gazeY": 540,
+   "headPitch": 1.135507,
+   "headYaw": -4.796657,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.2,
+   "targetX": 306,
+   "targetY": 540,
+   "gazeX": 432,
+   "gazeY": 534,
+   "headPitch": 1.023133,
+   "headYaw": -4.854102,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.233333,
+   "targetX": 326,
+   "targetY": 540,
+   "gazeX": 453,
+   "gazeY": 543,
+   "headPitch": 0.910388,
+   "headYaw": -4.910287,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.266667,
+   "targetX": 348,
+   "targetY": 540,
+   "gazeX": 472,
+   "gazeY": 542,
+   "headPitch": 0.797313,
+   "headYaw": -4.965199,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.3,
+   "targetX": 371,
+   "targetY": 540,
+   "gazeX": 487,
+   "gazeY": 541,
+   "headPitch": 0.683948,
+   "headYaw": -5.018821,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.333333,
+   "targetX": 394,
+   "targetY": 540,
+   "gazeX": 505,
+   "gazeY": 538,
+   "headPitch": 0.570336,
+   "headYaw": -5.071141,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.366667,
+   "targetX": 418,
+   "targetY": 540,
+   "gazeX": 521,
+   "gazeY": 533,
+   "headPitch": 0.456517,
+   "headYaw": -5.122144,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.4,
+   "targetX": 442,
+   "targetY": 540,
+   "gazeX": 544,
+   "gazeY": 535,
+   "headPitch": 0.342533,
+   "headYaw": -5.171818,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.433333,
+   "targetX": 467,
+   "targetY": 540,
+   "gazeX": 562,
+   "gazeY": 542,
+   "headPitch": 0.228424,
+   "headYaw": -5.22015,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.466667,
+   "targetX": 493,
+   "targetY": 540,
+   "gazeX": 586,
+   "gazeY": 551,
+   "headPitch": 0.114233,
+   "headYaw": -5.267126,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.5,
+   "targetX": 519,
+   "targetY": 540,
+   "gazeX": 611,
+   "gazeY": 537,
+   "headPitch": 0.0,
+   "headYaw": -5.312736,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.533333,
+   "targetX": 546,
+   "targetY": 540,
+   "gazeX": 632,
+   "gazeY": 541,
+   "headPitch": -0.114233,
+   "headYaw": -5.356967,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.566667,
+   "targetX": 574,
+   "targetY": 540,
+   "gazeX": 648,
+   "gazeY": 544,
+   "headPitch": -0.228424,
+   "headYaw": -5.399807,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.6,
+   "targetX": 602,
+   "targetY": 540,
+   "gazeX": 670,
+   "gazeY": 527,
+   "headPitch": -0.342533,
+   "headYaw": -5.441246,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.633333,
+   "targetX": 630,
+   "targetY": 540,
+   "gazeX": 699,
+   "gazeY": 537,
+   "headPitch": -0.456517,
+   "headYaw": -5.481273,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.666667,
+   "targetX": 659,
+   "targetY": 540,
+   "gazeX": 725,
+   "gazeY": 537,
+   "headPitch": -0.570336,
+   "headYaw": -5.519877,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.7,
+   "targetX": 688,
+   "targetY": 540,
+   "gazeX": 737,
+   "gazeY": 546,
+   "headPitch": -0.683948,
+   "headYaw": -5.557048,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.733333,
+   "targetX": 717,
+   "targetY": 540,
+   "gazeX": 761,
+   "gazeY": 540,
+   "headPitch": -0.797313,
+   "headYaw": -5.592777,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.766667,
+   "targetX": 747,
+   "targetY": 540,
+   "gazeX": 795,
+   "gazeY": 540,
+   "headPitch": -0.910388,
+   "headYaw": -5.627054,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.8,
+   "targetX": 777,
+   "targetY": 540,
+   "gazeX": 813,
+   "gazeY": 540,
+   "headPitch": -1.023133,
+   "headYaw": -5.659871,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.833333,
+   "targetX": 807,
+   "targetY": 540,
+   "gazeX": 841,
+   "gazeY": 536,
+   "headPitch": -1.135507,
+   "headYaw": -5.691219,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.866667,
+   "targetX": 837,
+   "targetY": 540,
+   "gazeX": 864,
+   "gazeY": 542,
+   "headPitch": -1.24747,
+   "headYaw": -5.721089,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.9,
+   "targetX": 868,
+   "targetY": 540,
+   "gazeX": 895,
+   "gazeY": 538,
+   "headPitch": -1.358981,
+   "headYaw": -5.749475,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.933333,
+   "targetX": 898,
+   "targetY": 540,
+   "gazeX": 907,
+   "gazeY": 542,
+   "headPitch": -1.469998,
+   "headYaw": -5.776368,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 5.966667,
+   "targetX": 929,
+   "targetY": 540,
+   "gazeX": 933,
+   "gazeY": 541,
+   "headPitch": -1.580483,
+   "headYaw": -5.801763,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.0,
+   "targetX": 959,
+   "targetY": 540,
+   "gazeX": 960,
+   "gazeY": 544,
+   "headPitch": -1.690395,
+   "headYaw": -5.825651,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.033333,
+   "targetX": 990,
+   "targetY": 540,
+   "gazeX": 981,
+   "gazeY": 539,
+   "headPitch": -1.799695,
+   "headYaw": -5.848027,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.066667,
+   "targetX": 1021,
+   "targetY": 540,
+   "gazeX": 998,
+   "gazeY": 536,
+   "headPitch": -1.908341,
+   "headYaw": -5.868886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.1,
+   "targetX": 1051,
+   "targetY": 540,
+   "gazeX": 1039,
+   "gazeY": 537,
+   "headPitch": -2.016296,
+   "headYaw": -5.888221,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.133333,
+   "targetX": 1082,
+   "targetY": 540,
+   "gazeX": 1055,
+   "gazeY": 535,
+   "headPitch": -2.12352,
+   "headYaw": -5.906028,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.166667,
+   "targetX": 1112,
+   "targetY": 540,
+   "gazeX": 1084,
+   "gazeY": 540,
+   "headPitch": -2.229975,
+   "headYaw": -5.922302,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.2,
+   "targetX": 1142,
+   "targetY": 540,
+   "gazeX": 1101,
+   "gazeY": 542,
+   "headPitch": -2.335621,
+   "headYaw": -5.937038,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.233333,
+   "targetX": 1172,
+   "targetY": 540,
+   "gazeX": 1131,
+   "gazeY": 543,
+   "headPitch": -2.44042,
+   "headYaw": -5.950234,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.266667,
+   "targetX": 1202,
+   "targetY": 540,
+   "gazeX": 1151,
+   "gazeY": 546,
+   "headPitch": -2.544334,
+   "headYaw": -5.961886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.3,
+   "targetX": 1231,
+   "targetY": 540,
+   "gazeX": 1179,
+   "gazeY": 539,
+   "headPitch": -2.647327,
+   "headYaw": -5.97199,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.333333,
+   "targetX": 1260,
+   "targetY": 540,
+   "gazeX": 1198,
+   "gazeY": 539,
+   "headPitch": -2.749359,
+   "headYaw": -5.980544,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.366667,
+   "targetX": 1289,
+   "targetY": 540,
+   "gazeX": 1227,
+   "gazeY": 538,
+   "headPitch": -2.850395,
+   "headYaw": -5.987546,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.4,
+   "targetX": 1317,
+   "targetY": 540,
+   "gazeX": 1250,
+   "gazeY": 542,
+   "headPitch": -2.950398,
+   "headYaw": -5.992993,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.433333,
+   "targetX": 1345,
+   "targetY": 540,
+   "gazeX": 1273,
+   "gazeY": 543,
+   "headPitch": -3.049331,
+   "headYaw": -5.996886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.466667,
+   "targetX": 1373,
+   "targetY": 540,
+   "gazeX": 1290,
+   "gazeY": 532,
+   "headPitch": -3.147158,
+   "headYaw": -5.999221,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.5,
+   "targetX": 1400,
+   "targetY": 540,
+   "gazeX": 1313,
+   "gazeY": 543,
+   "headPitch": -3.243845,
+   "headYaw": -6.0,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.533333,
+   "targetX": 1426,
+   "targetY": 540,
+   "gazeX": 1333,
+   "gazeY": 542,
+   "headPitch": -3.339356,
+   "headYaw": -5.999221,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.566667,
+   "targetX": 1452,
+   "targetY": 540,
+   "gazeX": 1351,
+   "gazeY": 538,
+   "headPitch": -3.433656,
+   "headYaw": -5.996886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.6,
+   "targetX": 1477,
+   "targetY": 540,
+   "gazeX": 1370,
+   "gazeY": 545,
+   "headPitch": -3.526712,
+   "headYaw": -5.992993,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.633333,
+   "targetX": 1501,
+   "targetY": 540,
+   "gazeX": 1394,
+   "gazeY": 538,
+   "headPitch": -3.618489,
+   "headYaw": -5.987546,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.666667,
+   "targetX": 1525,
+   "targetY": 540,
+   "gazeX": 1407,
+   "gazeY": 539,
+   "headPitch": -3.708954,
+   "headYaw": -5.980544,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.7,
+   "targetX": 1548,
+   "targetY": 540,
+   "gazeX": 1436,
+   "gazeY": 541,
+   "headPitch": -3.798075,
+   "headYaw": -5.97199,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.733333,
+   "targetX": 1571,
+   "targetY": 540,
+   "gazeX": 1446,
+   "gazeY": 545,
+   "headPitch": -3.885819,
+   "headYaw": -5.961886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.766667,
+   "targetX": 1593,
+   "targetY": 540,
+   "gazeX": 1472,
+   "gazeY": 543,
+   "headPitch": -3.972154,
+   "headYaw": -5.950234,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.8,
+   "targetX": 1613,
+   "targetY": 540,
+   "gazeX": 1486,
+   "gazeY": 544,
+   "headPitch": -4.057049,
+   "headYaw": -5.937038,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.833333,
+   "targetX": 1634,
+   "targetY": 540,
+   "gazeX": 1501,
+   "gazeY": 543,
+   "headPitch": -4.140474,
+   "headYaw": -5.922302,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.866667,
+   "targetX": 1653,
+   "targetY": 540,
+   "gazeX": 1511,
+   "gazeY": 545,
+   "headPitch": -4.222398,
+   "headYaw": -5.906028,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.9,
+   "targetX": 1671,
+   "targetY": 540,
+   "gazeX": 1530,
+   "gazeY": 548,
+   "headPitch": -4.302791,
+   "headYaw": -5.888221,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.933333,
+   "targetX": 1689,
+   "targetY": 540,
+   "gazeX": 1535,
+   "gazeY": 542,
+   "headPitch": -4.381624,
+   "headYaw": -5.868886,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 6.966667,
+   "targetX": 1706,
+   "targetY": 540,
+   "gazeX": 1560,
+   "gazeY": 538,
+   "headPitch": -4.458869,
+   "headYaw": -5.848027,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.0,
+   "targetX": 1722,
+   "targetY": 540,
+   "gazeX": 1571,
+   "gazeY": 542,
+   "headPitch": -4.534497,
+   "headYaw": -5.825651,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.033333,
+   "targetX": 1736,
+   "targetY": 540,
+   "gazeX": 1583,
+   "gazeY": 537,
+   "headPitch": -4.608482,
+   "headYaw": -5.801763,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.066667,
+   "targetX": 1750,
+   "targetY": 540,
+   "gazeX": 1592,
+   "gazeY": 544,
+   "headPitch": -4.680796,
+   "headYaw": -5.776368,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.1,
+   "targetX": 1763,
+   "targetY": 540,
+   "gazeX": 1608,
+   "gazeY": 540,
+   "headPitch": -4.751413,
+   "headYaw": -5.749475,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.133333,
+   "targetX": 1775,
+   "targetY": 540,
+   "gazeX": 1613,
+   "gazeY": 540,
+   "headPitch": -4.820308,
+   "headYaw": -5.721089,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.166667,
+   "targetX": 1786,
+   "targetY": 540,
+   "gazeX": 1625,
+   "gazeY": 535,
+   "headPitch": -4.887456,
+   "headYaw": -5.691219,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.2,
+   "targetX": 1796,
+   "targetY": 540,
+   "gazeX": 1624,
+   "gazeY": 540,
+   "headPitch": -4.952831,
+   "headYaw": -5.659871,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.233333,
+   "targetX": 1805,
+   "targetY": 540,
+   "gazeX": 1632,
+   "gazeY": 537,
+   "headPitch": -5.016412,
+   "headYaw": -5.627054,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.266667,
+   "targetX": 1813,
+   "targetY": 540,
+   "gazeX": 1643,
+   "gazeY": 541,
+   "headPitch": -5.078173,
+   "headYaw": -5.592777,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.3,
+   "targetX": 1820,
+   "targetY": 540,
+   "gazeX": 1644,
+   "gazeY": 543,
+   "headPitch": -5.138094,
+   "headYaw": -5.557048,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.333333,
+   "targetX": 1826,
+   "targetY": 540,
+   "gazeX": 1646,
+   "gazeY": 542,
+   "headPitch": -5.196152,
+   "headYaw": -5.519877,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.366667,
+   "targetX": 1831,
+   "targetY": 540,
+   "gazeX": 1650,
+   "gazeY": 534,
+   "headPitch": -5.252327,
+   "headYaw": -5.481273,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.4,
+   "targetX": 1835,
+   "targetY": 540,
+   "gazeX": 1662,
+   "gazeY": 538,
+   "headPitch": -5.306598,
+   "headYaw": -5.441246,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.433333,
+   "targetX": 1837,
+   "targetY": 540,
+   "gazeX": 1659,
+   "gazeY": 538,
+   "headPitch": -5.358944,
+   "headYaw": -5.399807,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.466667,
+   "targetX": 1839,
+   "targetY": 540,
+   "gazeX": 1665,
+   "gazeY": 539,
+   "headPitch": -5.409349,
+   "headYaw": -5.356967,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.5,
+   "targetX": 1840,
+   "targetY": 540,
+   "gazeX": 1663,
+   "gazeY": 544,
+   "headPitch": -5.457792,
+   "headYaw": -5.312736,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.533333,
+   "targetX": 1839,
+   "targetY": 540,
+   "gazeX": 1660,
+   "gazeY": 538,
+   "headPitch": -5.504257,
+   "headYaw": -5.267126,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.566667,
+   "targetX": 1837,
+   "targetY": 540,
+   "gazeX": 1660,
+   "gazeY": 544,
+   "headPitch": -5.548726,
+   "headYaw": -5.22015,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.6,
+   "targetX": 1835,
+   "targetY": 540,
+   "gazeX": 1664,
+   "gazeY": 545,
+   "headPitch": -5.591184,
+   "headYaw": -5.171818,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.633333,
+   "targetX": 1831,
+   "targetY": 540,
+   "gazeX": 1657,
+   "gazeY": 539,
+   "headPitch": -5.631615,
+   "headYaw": -5.122144,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.666667,
+   "targetX": 1826,
+   "targetY": 540,
+   "gazeX": 1656,
+   "gazeY": 538,
+   "headPitch": -5.670005,
+   "headYaw": -5.071141,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.7,
+   "targetX": 1820,
+   "targetY": 540,
+   "gazeX": 1651,
+   "gazeY": 542,
+   "headPitch": -5.706339,
+   "headYaw": -5.018821,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.733333,
+   "targetX": 1813,
+   "targetY": 540,
+   "gazeX": 1640,
+   "gazeY": 539,
+   "headPitch": -5.740605,
+   "headYaw": -4.965199,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.766667,
+   "targetX": 1805,
+   "targetY": 540,
+   "gazeX": 1636,
+   "gazeY": 546,
+   "headPitch": -5.772789,
+   "headYaw": -4.910287,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.8,
+   "targetX": 1796,
+   "targetY": 540,
+   "gazeX": 1639,
+   "gazeY": 539,
+   "headPitch": -5.802881,
+   "headYaw": -4.854102,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.833333,
+   "targetX": 1786,
+   "targetY": 540,
+   "gazeX": 1621,
+   "gazeY": 530,
+   "headPitch": -5.830869,
+   "headYaw": -4.796657,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.866667,
+   "targetX": 1775,
+   "targetY": 540,
+   "gazeX": 1613,
+   "gazeY": 539,
+   "headPitch": -5.856744,
+   "headYaw": -4.737966,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.9,
+   "targetX": 1763,
+   "targetY": 540,
+   "gazeX": 1598,
+   "gazeY": 543,
+   "headPitch": -5.880495,
+   "headYaw": -4.678046,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.933333,
+   "targetX": 1750,
+   "targetY": 540,
+   "gazeX": 1586,
+   "gazeY": 539,
+   "headPitch": -5.902115,
+   "headYaw": -4.616912,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 7.966667,
+   "targetX": 1736,
+   "targetY": 540,
+   "gazeX": 1582,
+   "gazeY": 535,
+   "headPitch": -5.921595,
+   "headYaw": -4.554579,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.0,
+   "targetX": 1722,
+   "targetY": 540,
+   "gazeX": 1573,
+   "gazeY": 544,
+   "headPitch": -5.938929,
+   "headYaw": -4.491064,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.033333,
+   "targetX": 1706,
+   "targetY": 540,
+   "gazeX": 1551,
+   "gazeY": 534,
+   "headPitch": -5.954109,
+   "headYaw": -4.426384,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.066667,
+   "targetX": 1689,
+   "targetY": 540,
+   "gazeX": 1546,
+   "gazeY": 539,
+   "headPitch": -5.967131,
+   "headYaw": -4.360555,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.1,
+   "targetX": 1671,
+   "targetY": 540,
+   "gazeX": 1524,
+   "gazeY": 538,
+   "headPitch": -5.97799,
+   "headYaw": -4.293594,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.133333,
+   "targetX": 1653,
+   "targetY": 540,
+   "gazeX": 1514,
+   "gazeY": 539,
+   "headPitch": -5.986682,
+   "headYaw": -4.225518,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.166667,
+   "targetX": 1634,
+   "targetY": 540,
+   "gazeX": 1502,
+   "gazeY": 541,
+   "headPitch": -5.993204,
+   "headYaw": -4.156346,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.2,
+   "targetX": 1613,
+   "targetY": 540,
+   "gazeX": 1490,
+   "gazeY": 545,
+   "headPitch": -5.997553,
+   "headYaw": -4.086095,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.233333,
+   "targetX": 1593,
+   "targetY": 540,
+   "gazeX": 1469,
+   "gazeY": 544,
+   "headPitch": -5.999728,
+   "headYaw": -4.014784,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.266667,
+   "targetX": 1571,
+   "targetY": 540,
+   "gazeX": 1454,
+   "gazeY": 542,
+   "headPitch": -5.999728,
+   "headYaw": -3.94243,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.3,
+   "targetX": 1548,
+   "targetY": 540,
+   "gazeX": 1426,
+   "gazeY": 543,
+   "headPitch": -5.997553,
+   "headYaw": -3.869053,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.333333,
+   "targetX": 1525,
+   "targetY": 540,
+   "gazeX": 1412,
+   "gazeY": 546,
+   "headPitch": -5.993204,
+   "headYaw": -3.794672,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.366667,
+   "targetX": 1501,
+   "targetY": 540,
+   "gazeX": 1393,
+   "gazeY": 542,
+   "headPitch": -5.986682,
+   "headYaw": -3.719306,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.4,
+   "targetX": 1477,
+   "targetY": 540,
+   "gazeX": 1375,
+   "gazeY": 546,
+   "headPitch": -5.97799,
+   "headYaw": -3.642975,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.433333,
+   "targetX": 1452,
+   "targetY": 540,
+   "gazeX": 1354,
+   "gazeY": 538,
+   "headPitch": -5.967131,
+   "headYaw": -3.565698,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.466667,
+   "targetX": 1426,
+   "targetY": 540,
+   "gazeX": 1334,
+   "gazeY": 538,
+   "headPitch": -5.954109,
+   "headYaw": -3.487496,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.5,
+   "targetX": 1399,
+   "targetY": 540,
+   "gazeX": 1312,
+   "gazeY": 539,
+   "headPitch": -5.938929,
+   "headYaw": -3.408388,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.533333,
+   "targetX": 1373,
+   "targetY": 540,
+   "gazeX": 1291,
+   "gazeY": 547,
+   "headPitch": -5.921595,
+   "headYaw": -3.328396,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.566667,
+   "targetX": 1345,
+   "targetY": 540,
+   "gazeX": 1266,
+   "gazeY": 540,
+   "headPitch": -5.902115,
+   "headYaw": -3.24754,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.6,
+   "targetX": 1317,
+   "targetY": 540,
+   "gazeX": 1245,
+   "gazeY": 542,
+   "headPitch": -5.880495,
+   "headYaw": -3.165841,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.633333,
+   "targetX": 1289,
+   "targetY": 540,
+   "gazeX": 1218,
+   "gazeY": 537,
+   "headPitch": -5.856744,
+   "headYaw": -3.083321,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.666667,
+   "targetX": 1260,
+   "targetY": 540,
+   "gazeX": 1200,
+   "gazeY": 542,
+   "headPitch": -5.830869,
+   "headYaw": -3.0,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.7,
+   "targetX": 1231,
+   "targetY": 540,
+   "gazeX": 1177,
+   "gazeY": 537,
+   "headPitch": -5.802881,
+   "headYaw": -2.9159,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.733333,
+   "targetX": 1202,
+   "targetY": 540,
+   "gazeX": 1150,
+   "gazeY": 542,
+   "headPitch": -5.772789,
+   "headYaw": -2.831044,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.766667,
+   "targetX": 1172,
+   "targetY": 540,
+   "gazeX": 1136,
+   "gazeY": 541,
+   "headPitch": -5.740605,
+   "headYaw": -2.745453,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.8,
+   "targetX": 1142,
+   "targetY": 540,
+   "gazeX": 1107,
+   "gazeY": 541,
+   "headPitch": -5.706339,
+   "headYaw": -2.659149,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.833333,
+   "targetX": 1112,
+   "targetY": 540,
+   "gazeX": 1078,
+   "gazeY": 538,
+   "headPitch": -5.670005,
+   "headYaw": -2.572155,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.866667,
+   "targetX": 1082,
+   "targetY": 540,
+   "gazeX": 1056,
+   "gazeY": 541,
+   "headPitch": -5.631615,
+   "headYaw": -2.484494,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.9,
+   "targetX": 1051,
+   "targetY": 540,
+   "gazeX": 1033,
+   "gazeY": 535,
+   "headPitch": -5.591184,
+   "headYaw": -2.396188,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.933333,
+   "targetX": 1021,
+   "targetY": 540,
+   "gazeX": 1013,
+   "gazeY": 546,
+   "headPitch": -5.548726,
+   "headYaw": -2.307259,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 8.966667,
+   "targetX": 990,
+   "targetY": 540,
+   "gazeX": 983,
+   "gazeY": 541,
+   "headPitch": -5.504257,
+   "headYaw": -2.217732,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.0,
+   "targetX": 960,
+   "targetY": 540,
+   "gazeX": 961,
+   "gazeY": 543,
+   "headPitch": -5.457792,
+   "headYaw": -2.127629,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.033333,
+   "targetX": 929,
+   "targetY": 540,
+   "gazeX": 929,
+   "gazeY": 546,
+   "headPitch": -5.409349,
+   "headYaw": -2.036974,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.066667,
+   "targetX": 898,
+   "targetY": 540,
+   "gazeX": 909,
+   "gazeY": 545,
+   "headPitch": -5.358944,
+   "headYaw": -1.945791,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.1,
+   "targetX": 868,
+   "targetY": 540,
+   "gazeX": 886,
+   "gazeY": 538,
+   "headPitch": -5.306598,
+   "headYaw": -1.854102,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.133333,
+   "targetX": 837,
+   "targetY": 540,
+   "gazeX": 861,
+   "gazeY": 543,
+   "headPitch": -5.252327,
+   "headYaw": -1.761932,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.166667,
+   "targetX": 807,
+   "targetY": 540,
+   "gazeX": 834,
+   "gazeY": 538,
+   "headPitch": -5.196152,
+   "headYaw": -1.669305,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.2,
+   "targetX": 777,
+   "targetY": 540,
+   "gazeX": 811,
+   "gazeY": 533,
+   "headPitch": -5.138094,
+   "headYaw": -1.576244,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.233333,
+   "targetX": 747,
+   "targetY": 540,
+   "gazeX": 794,
+   "gazeY": 542,
+   "headPitch": -5.078173,
+   "headYaw": -1.482775,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.266667,
+   "targetX": 717,
+   "targetY": 540,
+   "gazeX": 765,
+   "gazeY": 544,
+   "headPitch": -5.016412,
+   "headYaw": -1.38892,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.3,
+   "targetX": 688,
+   "targetY": 540,
+   "gazeX": 738,
+   "gazeY": 539,
+   "headPitch": -4.952831,
+   "headYaw": -1.294705,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.333333,
+   "targetX": 659,
+   "targetY": 540,
+   "gazeX": 726,
+   "gazeY": 543,
+   "headPitch": -4.887456,
+   "headYaw": -1.200154,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.366667,
+   "targetX": 630,
+   "targetY": 540,
+   "gazeX": 687,
+   "gazeY": 526,
+   "headPitch": -4.820308,
+   "headYaw": -1.105292,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.4,
+   "targetX": 602,
+   "targetY": 540,
+   "gazeX": 669,
+   "gazeY": 544,
+   "headPitch": -4.751413,
+   "headYaw": -1.010142,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.433333,
+   "targetX": 574,
+   "targetY": 540,
+   "gazeX": 649,
+   "gazeY": 539,
+   "headPitch": -4.680796,
+   "headYaw": -0.914731,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.466667,
+   "targetX": 546,
+   "targetY": 540,
+   "gazeX": 631,
+   "gazeY": 536,
+   "headPitch": -4.608482,
+   "headYaw": -0.819082,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.5,
+   "targetX": 520,
+   "targetY": 540,
+   "gazeX": 608,
+   "gazeY": 543,
+   "headPitch": -4.534497,
+   "headYaw": -0.72322,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.533333,
+   "targetX": 493,
+   "targetY": 540,
+   "gazeX": 588,
+   "gazeY": 541,
+   "headPitch": -4.458869,
+   "headYaw": -0.627171,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.566667,
+   "targetX": 467,
+   "targetY": 540,
+   "gazeX": 563,
+   "gazeY": 542,
+   "headPitch": -4.381624,
+   "headYaw": -0.530959,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.6,
+   "targetX": 442,
+   "targetY": 540,
+   "gazeX": 544,
+   "gazeY": 545,
+   "headPitch": -4.302791,
+   "headYaw": -0.434609,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.633333,
+   "targetX": 418,
+   "targetY": 540,
+   "gazeX": 536,
+   "gazeY": 537,
+   "headPitch": -4.222398,
+   "headYaw": -0.338146,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.666667,
+   "targetX": 394,
+   "targetY": 540,
+   "gazeX": 498,
+   "gazeY": 538,
+   "headPitch": -4.140474,
+   "headYaw": -0.241596,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.7,
+   "targetX": 371,
+   "targetY": 540,
+   "gazeX": 490,
+   "gazeY": 544,
+   "headPitch": -4.057049,
+   "headYaw": -0.144982,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.733333,
+   "targetX": 348,
+   "targetY": 540,
+   "gazeX": 475,
+   "gazeY": 536,
+   "headPitch": -3.972154,
+   "headYaw": -0.048332,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.766667,
+   "targetX": 326,
+   "targetY": 540,
+   "gazeX": 450,
+   "gazeY": 545,
+   "headPitch": -3.885819,
+   "headYaw": 0.048332,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.8,
+   "targetX": 306,
+   "targetY": 540,
+   "gazeX": 432,
+   "gazeY": 544,
+   "headPitch": -3.798075,
+   "headYaw": 0.144982,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.833333,
+   "targetX": 285,
+   "targetY": 540,
+   "gazeX": 419,
+   "gazeY": 543,
+   "headPitch": -3.708954,
+   "headYaw": 0.241596,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.866667,
+   "targetX": 266,
+   "targetY": 540,
+   "gazeX": 408,
+   "gazeY": 543,
+   "headPitch": -3.618489,
+   "headYaw": 0.338146,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.9,
+   "targetX": 248,
+   "targetY": 540,
+   "gazeX": 393,
+   "gazeY": 536,
+   "headPitch": -3.526712,
+   "headYaw": 0.434609,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.933333,
+   "targetX": 230,
+   "targetY": 540,
+   "gazeX": 377,
+   "gazeY": 540,
+   "headPitch": -3.433656,
+   "headYaw": 0.530959,
+   "faceDetected": true
+  },
+  {
+   "timestamp": 9.966667,
+   "targetX": 213,
+   "targetY": 540,
+   "gazeX": 364,
+   "gazeY": 544,
+   "headPitch": -3.339356,
+   "headYaw": 0.627171,
+   "faceDetected": true
+  }
+ ],
+ "expected": {
+  "trackingRatio": 100.0,
+  "directionMatch": 67.748995,
+  "speedMatch": 67.652809,
+  "smoothScore": 96.196125,
+  "headStillness": 52.202421,
+  "avgDistancePx": 109.032296,
+  "pursuitGain": 0.864057,
+  "accuracyDegrees": 3.214488,
+  "phaseLagMs": 0.0,
+  "totalFrames": 300
+ }
+}

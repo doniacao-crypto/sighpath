@@ -13,5 +13,5 @@
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "prettier/prettier": "error"
   },
-  "ignorePatterns": ["dist/", "node_modules/", "coverage/"]
+  "ignorePatterns": ["dist/", "node_modules/", "coverage/", "web/public/wasm/"]
 }

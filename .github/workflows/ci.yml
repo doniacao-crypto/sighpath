@@ -123,6 +123,32 @@ jobs:
         # Offscreen: the runner has no display, and the Qt tests build real widgets.
         run: QT_QPA_PLATFORM=offscreen python -m pytest tests/ -v --tb=short
 
+  web:
+    name: Web (SightPath v2)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+      - name: Install web dependencies
+        run: npm ci
+        working-directory: web
+      - name: Type check
+        run: npm run typecheck
+        working-directory: web
+      - name: Format check
+        run: npm run format:check
+        working-directory: web
+      - name: Test
+        run: npm test
+        working-directory: web
+      - name: Build
+        run: npm run build
+        working-directory: web
+
   build:
     name: Build
     runs-on: ubuntu-latest
