@@ -6,11 +6,14 @@ import { CameraView } from "./CameraView";
 import { CalibrationStage } from "./CalibrationStage";
 import { HistoryPanel } from "./HistoryPanel";
 import { HomeStage, type CameraOption } from "./HomeStage";
-import { ResultsStage } from "./ResultsStage";
+import { ProtocolResults } from "./ProtocolResults";
+import { ProtocolStage } from "./ProtocolStage";
 import { TestStage } from "./TestStage";
+import type { ProtocolSession } from "../lib/types";
 
 import { predictGaze, type GazeModel } from "../lib/features";
-import type { EyeSample, TestSession } from "../lib/types";
+import { drawLandmarks, type NormalizedLandmark } from "../lib/landmarks";
+import type { EyeSample } from "../lib/types";
 import { VisionTracker } from "../lib/vision";
 
 /** Where the finished sessions are kept. Nothing leaves the browser. */
@@ -20,7 +23,40 @@ const CAMERA_STORAGE_KEY = "sightpath.cameraId";
 /** How many sessions are kept before the oldest ones are dropped. */
 const MAX_STORED_SESSIONS = 20;
 
-type Stage = "home" | "calibration" | "test" | "results";
+/** The saccade protocol's defaults, taken from the desktop configuration. */
+const SACADE_SETTINGS = {
+  numTrials: 20,
+  type: "horizontal" as const,
+  eccentricitiesDeg: [10],
+  randomizeDirection: true,
+  randomizeTiming: true,
+  seed: 20260101,
+  fixationDurationMs: 1000,
+  gapDurationMs: 200,
+  targetDurationMs: 1000,
+  responseWindowMs: 800,
+};
+
+/** The fixation protocol's defaults: a twenty second hold, as the desktop uses. */
+const FIXATION_SETTINGS = { durationSeconds: 20 };
+
+/** The validation protocol's defaults: the nine point grid of the desktop test. */
+const VALIDATION_SETTINGS = {
+  pattern: "grid_9" as const,
+  marginPercent: 0.15,
+  samplesPerPoint: 30,
+  pointDurationMs: 2000,
+  settlingMs: 500,
+};
+
+type Stage =
+  | "home"
+  | "calibration"
+  | "test"
+  | "saccade"
+  | "fixation"
+  | "validation"
+  | "results";
 
 /** A position on the stage, in pixels. */
 export interface GazePoint {
@@ -36,6 +72,8 @@ export interface StageFrame {
   sample: EyeSample | null;
   /** The newest gaze estimate in stage pixels, or null when there is no estimate. */
   gaze: GazePoint | null;
+  /** The tracked landmarks of the newest frame, for the debug overlay. */
+  landmarks: readonly NormalizedLandmark[] | null;
   /** Stage size in pixels. */
   width: number;
   height: number;
@@ -58,17 +96,26 @@ export interface StageController {
 }
 
 /** Narrowing guard for the sessions read back from storage. */
-function isStoredSession(value: unknown): value is TestSession {
+function isStoredSession(value: unknown): value is ProtocolSession {
   if (typeof value !== "object" || value === null) return false;
-  const candidate = value as Partial<TestSession>;
+  const candidate = value as Partial<ProtocolSession>;
   return (
     typeof candidate.id === "string" &&
     typeof candidate.startedAt === "string" &&
-    typeof candidate.pattern === "string" &&
     typeof candidate.durationSeconds === "number" &&
     typeof candidate.metrics === "object" &&
     candidate.metrics !== null
   );
+}
+
+/**
+ * The sessions stored before the other protocols existed have no protocol field; they were
+ * all pursuit runs.
+ */
+function restoreStoredSession(value: ProtocolSession): ProtocolSession {
+  const candidate = value as Partial<ProtocolSession> & { protocol?: string };
+  if (candidate.protocol) return value;
+  return { ...candidate, protocol: "pursuit" } as ProtocolSession;
 }
 
 export function App() {
@@ -76,8 +123,8 @@ export function App() {
   const [cameras, setCameras] = useState<CameraOption[]>([]);
   const [deviceId, setDeviceId] = useState<string | null>(null);
   const [model, setModel] = useState<GazeModel | null>(null);
-  const [session, setSession] = useState<TestSession | null>(null);
-  const [history, setHistory] = useState<TestSession[]>([]);
+  const [session, setSession] = useState<ProtocolSession | null>(null);
+  const [history, setHistory] = useState<ProtocolSession[]>([]);
   const [historyOpen, setHistoryOpen] = useState(false);
   const [cameraError, setCameraError] = useState<string | null>(null);
   const [trackerError, setTrackerError] = useState<string | null>(null);
@@ -89,6 +136,7 @@ export function App() {
   const modelRef = useRef<GazeModel | null>(null);
   const sampleRef = useRef<EyeSample | null>(null);
   const gazeRef = useRef<GazePoint | null>(null);
+  const landmarksRef = useRef<readonly NormalizedLandmark[] | null>(null);
   const stageSizeRef = useRef({ width: 0, height: 0 });
   const calibrationSizeRef = useRef({ width: 0, height: 0 });
   const controllerRef = useRef<StageController | null>(null);
@@ -288,6 +336,7 @@ export function App() {
             .then((result) => {
               // A slow detection must not overwrite the sample of a newer frame.
               if (requestId !== detectRequestRef.current) return;
+              landmarksRef.current = result?.landmarks ?? null;
               applySample(result ? result.sample : null);
             })
             .catch(() => {
@@ -301,6 +350,7 @@ export function App() {
         timestamp,
         sample: sampleRef.current,
         gaze: gazeRef.current,
+        landmarks: landmarksRef.current,
         width,
         height,
       });
@@ -311,6 +361,8 @@ export function App() {
   const handleDraw = useCallback(
     (context: CanvasRenderingContext2D, width: number, height: number) => {
       stageSizeRef.current = { width, height };
+      // The tracked points are drawn first, so the stage's own overlay sits on top of them.
+      drawLandmarks(context, landmarksRef.current, width, height);
       controllerRef.current?.onDraw(context, width, height);
     },
     []
@@ -328,7 +380,7 @@ export function App() {
 
   /* Sessions -------------------------------------------------------------- */
 
-  const persistHistory = useCallback((sessions: TestSession[]) => {
+  const persistHistory = useCallback((sessions: ProtocolSession[]) => {
     try {
       window.localStorage.setItem(
         SESSION_STORAGE_KEY,
@@ -346,7 +398,10 @@ export function App() {
       const parsed: unknown = JSON.parse(raw);
       if (Array.isArray(parsed)) {
         setHistory(
-          parsed.filter(isStoredSession).slice(0, MAX_STORED_SESSIONS)
+          parsed
+            .filter(isStoredSession)
+            .map(restoreStoredSession)
+            .slice(0, MAX_STORED_SESSIONS)
         );
       }
     } catch {
@@ -355,7 +410,7 @@ export function App() {
   }, []);
 
   const handleSessionComplete = useCallback(
-    (completed: TestSession) => {
+    (completed: ProtocolSession) => {
       const next = [completed, ...history].slice(0, MAX_STORED_SESSIONS);
       setHistory(next);
       persistHistory(next);
@@ -438,6 +493,15 @@ export function App() {
             onDeviceChange={handleDeviceChange}
             onStartCalibration={() => setStage("calibration")}
             onStartTest={() => setStage("test")}
+            onStartProtocol={(protocol) =>
+              setStage(
+                protocol === "saccade"
+                  ? "saccade"
+                  : protocol === "fixation"
+                    ? "fixation"
+                    : "validation"
+              )
+            }
             onShowHistory={() => setHistoryOpen((open) => !open)}
           />
         )}
@@ -462,10 +526,47 @@ export function App() {
           />
         )}
 
-        {stage === "results" && (
-          <ResultsStage
+        {stage === "saccade" && (
+          <ProtocolStage
+            protocol="saccade"
+            settings={SACADE_SETTINGS}
+            model={model}
+            deviceId={deviceId}
+            calibrationSize={calibrationSizeRef.current}
+            onComplete={handleSessionComplete}
+            onCancel={() => setStage("home")}
+          />
+        )}
+
+        {stage === "fixation" && (
+          <ProtocolStage
+            protocol="fixation"
+            settings={FIXATION_SETTINGS}
+            model={model}
+            deviceId={deviceId}
+            calibrationSize={calibrationSizeRef.current}
+            onComplete={handleSessionComplete}
+            onCancel={() => setStage("home")}
+          />
+        )}
+
+        {stage === "validation" && (
+          <ProtocolStage
+            protocol="validation"
+            settings={VALIDATION_SETTINGS}
+            model={model}
+            deviceId={deviceId}
+            calibrationSize={calibrationSizeRef.current}
+            onComplete={handleSessionComplete}
+            onCancel={() => setStage("home")}
+          />
+        )}
+
+        {stage === "results" && session !== null && (
+          <ProtocolResults
+            protocol={session.protocol}
             session={session}
-            onRunAgain={() => setStage("test")}
+            onRunAnother={() => setStage("test")}
             onHome={() => setStage("home")}
           />
         )}

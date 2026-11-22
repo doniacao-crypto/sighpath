@@ -120,7 +120,8 @@ gain as much as the subject's tracking, so read it with the tracking rate next t
 ## Web version (v2)
 
 The browser version of SightPath lives in `web/` — the same measurement app,
-running in the browser.
+running in the browser. It runs the same four protocols as the desktop app: smooth
+pursuit, saccade, fixation stability and the fixed-head grid validation.
 
 ```bash
 cd web && npm install && npm run dev

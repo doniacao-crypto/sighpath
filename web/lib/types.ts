@@ -1,3 +1,7 @@
+import type { SaccadeMetrics, SaccadeTrialRecord } from "./saccade";
+import type { FixationMetrics } from "./fixation";
+import type { ValidationMetrics, ValidationPointResult } from "./validation";
+
 /**
  * Shared types for the browser version of SightPath.
  *
@@ -76,8 +80,10 @@ export interface PursuitMetrics {
   validFrames: number;
 }
 
-/** A finished test run. */
+/** A finished pursuit run. */
 export interface TestSession {
+  /** The protocol the run belongs to. */
+  protocol: "pursuit";
   id: string;
   startedAt: string;
   pattern: TargetPattern;
@@ -98,3 +104,43 @@ export interface TestConfig {
   /** 0-1, relative speed. */
   speed: number;
 }
+
+/** The protocols the browser version can run. */
+export type ProtocolId = "pursuit" | "saccade" | "fixation" | "validation";
+
+/** A finished saccade run. */
+export interface SaccadeSession {
+  protocol: "saccade";
+  id: string;
+  startedAt: string;
+  screen: ScreenGeometry;
+  durationSeconds: number;
+  records: SaccadeTrialRecord[];
+  metrics: SaccadeMetrics;
+}
+
+/** A finished fixation stability run. */
+export interface FixationSession {
+  protocol: "fixation";
+  id: string;
+  startedAt: string;
+  screen: ScreenGeometry;
+  durationSeconds: number;
+  frames: TrackingFrame[];
+  metrics: FixationMetrics;
+}
+
+/** A finished grid validation run. */
+export interface ValidationSession {
+  protocol: "validation";
+  id: string;
+  startedAt: string;
+  screen: ScreenGeometry;
+  durationSeconds: number;
+  points: ValidationPointResult[];
+  metrics: ValidationMetrics;
+}
+
+/** A finished run of any of the protocols. */
+export type ProtocolSession =
+  TestSession | SaccadeSession | FixationSession | ValidationSession;
