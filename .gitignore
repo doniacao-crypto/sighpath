@@ -34,6 +34,9 @@ web/.next/
 web/out/
 web/next-env.d.ts
 
+# Vercel project link (machine specific)
+web/.vercel/
+
 # Testing
 coverage/
 playwright-report/

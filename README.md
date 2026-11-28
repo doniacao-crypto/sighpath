@@ -127,6 +127,9 @@ pursuit, saccade, fixation stability and the fixed-head grid validation.
 cd web && npm install && npm run dev
 ```
 
+Deploy it with `cd web && vercel --prod --yes` (or point a Vercel project at the `web`
+directory).
+
 Deploy it to Vercel by pointing the project at the `web` directory. It measures
 the same way as the desktop app; see [`docs/v2-web.md`](./docs/v2-web.md) for its
 scope and the parity contract.

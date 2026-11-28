@@ -47,6 +47,25 @@ web/
 └── package.json
 ```
 
+## Deploying to Vercel
+
+The `web/` directory is the whole application: it has no server-side state, no environment
+variables and no database.
+
+With the CLI:
+
+```bash
+npm i -g vercel
+vercel login                     # or: export VERCEL_TOKEN=<token>
+cd web && vercel --prod --yes
+```
+
+Or connect the repository in the Vercel dashboard and set **Root Directory** to `web`;
+every push to `main` then deploys itself.
+
+The MediaPipe runtime and the face landmarker model are served from `public/`, so they ship
+with the deployment and nothing is fetched from a third party at runtime.
+
 ## Parity fixtures
 
 The files in `tests/fixtures/` were produced by the **Python** implementation in
